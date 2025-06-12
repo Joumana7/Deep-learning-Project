@@ -1,12 +1,13 @@
-Parkinson's Disease Detection and Severity Estimation using Deep Learning
+## Parkinson's Disease Detection and Severity Estimation using Deep Learning
 
+## Introduction
 This repository contains the implementation of a deep learning-based system for Parkinson's Disease (PD) detection and severity estimation using speech signal data. The project addresses two main tasks:
 
     Binary classification of individuals as either Healthy or PD.
 
     Regression-based estimation of disease severity using the Unified Parkinson’s Disease Rating Scale (UPDRS).
 
-Dataset
+## Dataset
 
 The dataset used is the Parkinson's Speech Dataset with Multiple Types of Audio Recordings from the UCI Machine Learning Repository. It includes:
 
@@ -28,9 +29,8 @@ The dataset used is the Parkinson's Speech Dataset with Multiple Types of Audio 
 
         No class labels provided.
 
- Project Structure
+ ## Project Structure
 
-The project includes the following steps:
 1. Data Preprocessing
 
     Loaded using pandas.
@@ -93,7 +93,7 @@ Each architecture is modularized into separate build_<model>() functions for reu
 
         Regression: MAE and MSE
 
- Results Summary
+ ## Results Summary
 Model	Classification Accuracy	Regression MAE
 LSTM	~85%	~9.10
 GRU	~85%	8.81 
@@ -105,7 +105,7 @@ DenseNet1D	~77.5%	~10.5
 
     GRU achieved the best performance in UPDRS regression.
 
-Insights & Discussion
+## Insights & Discussion
 
     Recurrent architectures (LSTM, GRU, etc.) performed significantly better than DenseNet1D, affirming the importance of temporal modeling in speech-based medical diagnosis.
 
@@ -113,8 +113,8 @@ Insights & Discussion
 
     Demonstrates feasibility of using deep learning for non-invasive PD detection from voice data.
 
-Getting Started
-Prerequisites
+
+## Prerequisites
 
 Install required Python packages:
 
@@ -122,26 +122,8 @@ pip install numpy pandas scikit-learn tensorflow matplotlib
 
 
 
- File Structure
 
-parkinsons-detection-dl/
-├── data/
-│   ├── train_data.txt
-│   └── test_data.txt
-├── models/
-│   ├── lstm_model.py
-│   ├── gru_model.py
-│   ├── bilstm_model.py
-│   ├── simpler_nn_model.py
-│   └── densenet1d_model.py
-├── utils/
-│   ├── preprocessing.py
-│   └── training.py
-├── train_models.py
-├── README.md
-└── requirements.txt
-
- References
+ ## References
 
     Dataset: UCI Parkinson's Speech Dataset
 
