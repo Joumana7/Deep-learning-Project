@@ -64,6 +64,7 @@ We implemented five deep learning architectures using TensorFlow/Keras:
     DenseNet1D: Conv1D-based architecture inspired by DenseNet for 1D data.
 
 Each architecture is modularized into separate build_<model>() functions for reusability.
+
 3. Model Training
 
     Used Adam optimizer with task-specific losses:
