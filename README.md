@@ -119,20 +119,7 @@ Install required Python packages:
 
 pip install numpy pandas scikit-learn tensorflow matplotlib
 
-Usage
 
-    Clone this repository:
-
-git clone https://github.com/yourusername/parkinsons-detection-dl.git
-cd parkinsons-detection-dl
-
-Place the dataset files (train_data.txt, test_data.txt) in the working directory.
-
-Run the main notebook or script:
-
-    python train_models.py
-
-    Modify architecture or parameters in model definition files as needed.
 
  File Structure
 
